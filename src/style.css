@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+/* Apply to the entire website */
+* {
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #4a90e2 #2d2d2d; /* For Firefox */
+}
+
+/* Custom Scrollbar for Webkit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2d2d2d; /* Dark background */
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a90e2; /* Blue scrollbar */
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #357ab8; /* Darker blue on hover */
+}
